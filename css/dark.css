@@ -1,0 +1,35 @@
+:root:has(nav .mode input:checked) {
+  /* colors */
+  --main-color: #ffffff;
+  --second-color: #9f9f9f;
+  --third-color: #9f9f9f;
+  --color-four: hsl(35, 72%, 44%);
+  --color-four-h: 35;
+  --color-four-s: 72%;
+  --color-four-l: 44%;
+  --main-bg: #202020;
+  --second-bg: #171717;
+  --bg-color: #252525;
+}
+
+nav:has(:checked) .mode label:nth-child(2) {
+  display: block;
+  color: white;
+}
+
+nav:has(:checked) .mode label:first-child {
+  display: none;
+}
+body:has(nav .mode input:checked) .chefs-group .chef-img::after {
+  background: url(../images/team-shape-dark.svg);
+  bottom: 0;
+}
+body:has(nav .mode input:checked) .chefs-group .chef .socail-icons i {
+  color: black;
+}
+body:has(nav .mode input:checked) .contact-info > div {
+  background-color: var(--second-bg);
+}
+body:has(nav .mode input:checked) form {
+  background-color: var(--second-bg);
+}
